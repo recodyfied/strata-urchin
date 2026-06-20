@@ -1,0 +1,46 @@
+#define COMBO_TIMEOUT_FAST 30
+#define COMBO_TIMEOUT_SLOW 60
+
+#define COMBO_IDLE_LONG 150
+#define COMBO_IDLE_SHORT 50
+
+
+// Left hand horizontal combos
+ZMK_COMBO(tilde,       &kp TILDE,             LT2 LT3,      BASE NAV GAME,  COMBO_TIMEOUT_FAST,  COMBO_IDLE_LONG)
+ZMK_COMBO(grave,       &kp GRAVE,             LT1 LT2,      BASE NAV GAME,  COMBO_TIMEOUT_FAST,  COMBO_IDLE_LONG)
+ZMK_COMBO(plus,        &kp PLUS,              LB2 LB3,      BASE NAV GAME,  COMBO_TIMEOUT_FAST,  COMBO_IDLE_LONG)
+ZMK_COMBO(equal,       &kp EQUAL,             LB1 LB2,      BASE NAV GAME,  COMBO_TIMEOUT_FAST,  COMBO_IDLE_LONG)
+// Left hand vertical combos
+ZMK_COMBO(exclamation, &kp EXCLAMATION,       LM3 LT3,      BASE NAV GAME,  COMBO_TIMEOUT_SLOW,  COMBO_IDLE_SHORT)
+ZMK_COMBO(question,    &kp QUESTION,          LM2 LT2,      BASE NAV GAME,  COMBO_TIMEOUT_SLOW,  COMBO_IDLE_SHORT)
+ZMK_COMBO(hash,        &kp HASH,              LM1 LT1,      BASE NAV GAME,  COMBO_TIMEOUT_SLOW,  COMBO_IDLE_SHORT)
+ZMK_COMBO(at,          &kp AT,                LB3 LM3,      BASE NAV GAME,  COMBO_TIMEOUT_SLOW,  COMBO_IDLE_SHORT)
+ZMK_COMBO(fslash,      &kp FSLH,              LB2 LM2,      BASE NAV GAME,  COMBO_TIMEOUT_SLOW,  COMBO_IDLE_SHORT)
+ZMK_COMBO(dollar,      &kp DOLLAR,            LB1 LM1,      BASE NAV GAME,  COMBO_TIMEOUT_SLOW,  COMBO_IDLE_SHORT)
+// Left hand split horizontal combos
+ZMK_COMBO(copy,        &kp C_AC_COPY,         LT1 LT3,      ALL,            COMBO_TIMEOUT_SLOW,  COMBO_IDLE_SHORT)
+ZMK_COMBO(paste,       &kp C_AC_PASTE,        LB1 LB3,      ALL,            COMBO_TIMEOUT_SLOW,  COMBO_IDLE_SHORT)
+
+// Right hand horizontal combos
+ZMK_COMBO(lbracket,    &kp LEFT_BRACKET,      RT1 RT2,      BASE NAV GAME,  COMBO_TIMEOUT_FAST,  COMBO_IDLE_LONG)
+ZMK_COMBO(rbracket,    &kp RIGHT_BRACKET,     RT2 RT3,      BASE NAV GAME,  COMBO_TIMEOUT_FAST,  COMBO_IDLE_LONG)
+ZMK_COMBO(lbrace,      &kp LEFT_BRACE,        RB1 RB2,      BASE NAV GAME,  COMBO_TIMEOUT_FAST,  COMBO_IDLE_LONG)
+ZMK_COMBO(rbrace,      &kp RIGHT_BRACE,       RB2 RB3,      BASE NAV GAME,  COMBO_TIMEOUT_FAST,  COMBO_IDLE_LONG)
+// Right hand vertical combos
+ZMK_COMBO(percent,     &kp PERCENT,           RT1 RM1,      BASE NAV GAME,  COMBO_TIMEOUT_SLOW,  COMBO_IDLE_SHORT)
+ZMK_COMBO(pipe,        &kp PIPE,              RT2 RM2,      BASE NAV GAME,  COMBO_TIMEOUT_SLOW,  COMBO_IDLE_SHORT)
+ZMK_COMBO(ampersand,   &kp AMPERSAND,         RT3 RM3,      BASE NAV GAME,  COMBO_TIMEOUT_SLOW,  COMBO_IDLE_SHORT)
+ZMK_COMBO(caret,       &kp CARET,             RM1 RB1,      BASE NAV GAME,  COMBO_TIMEOUT_SLOW,  COMBO_IDLE_SHORT)
+ZMK_COMBO(bslash,      &kp BSLH,              RM2 RB2,      BASE NAV GAME,  COMBO_TIMEOUT_SLOW,  COMBO_IDLE_SHORT)
+ZMK_COMBO(asterisk,    &kp ASTERISK,          RM3 RB3,      BASE NAV GAME,  COMBO_TIMEOUT_SLOW,  COMBO_IDLE_SHORT)
+// Right hand split horizontal combos
+ZMK_COMBO(cut,         &kp C_AC_CUT,          RT1 RT3,      ALL,            COMBO_TIMEOUT_SLOW,  COMBO_IDLE_SHORT)
+ZMK_COMBO(redo,        &kp C_AC_REDO,         RB1 RB3,      ALL,            COMBO_TIMEOUT_SLOW,  COMBO_IDLE_SHORT)
+
+// home row combos
+HRM_COMBO(underscore,  LC(LALT),  UNDERSCORE, LM2 LM3,      BASE NAV GAME,  COMBO_TIMEOUT_FAST,  COMBO_IDLE_LONG,   KEYS_RIGHT)
+HRM_COMBO(minus,       LS(LCTRL), MINUS,      LM1 LM2,      BASE NAV GAME,  COMBO_TIMEOUT_FAST,  COMBO_IDLE_LONG,   KEYS_RIGHT)
+HRM_COMBO(escape,      LS(LALT),  ESCAPE,     LM1 LM3,      ALL,            COMBO_TIMEOUT_SLOW,  COMBO_IDLE_SHORT,  KEYS_RIGHT)
+HRM_COMBO(lpar,        RS(RCTRL), LPAR,       RM1 RM2,      BASE NAV GAME,  COMBO_TIMEOUT_FAST,  COMBO_IDLE_LONG,   KEYS_LEFT)
+HRM_COMBO(rpar,        RC(RALT),  RPAR,       RM2 RM3,      BASE NAV GAME,  COMBO_TIMEOUT_FAST,  COMBO_IDLE_LONG,   KEYS_LEFT)
+HRM_COMBO(undo,        RS(RALT),  C_AC_UNDO,  RM1 RM3,      ALL,            COMBO_TIMEOUT_SLOW,  COMBO_IDLE_SHORT,  KEYS_LEFT)
